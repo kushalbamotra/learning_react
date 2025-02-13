@@ -46,19 +46,19 @@ function App() {
   }
   return (
     <>
-      {/* <Router> */}
+    <Router> 
       <Navbar title="Website" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
 
         <div className="container col-md-6 mt-5 mx-auto">
         <TextForm showAlert={showAlert} heading="Count Your Words" mode={mode} />
-            {/* <Routes>
+            <Routes>
               <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Count Your Words" mode={mode} />} />
               <Route exact path="/about" element={<About/>} />
                 
-            </Routes> */}
+            </Routes> 
         </div>
-      {/* </Router> */}
+       </Router> 
     </>
   );
 }
